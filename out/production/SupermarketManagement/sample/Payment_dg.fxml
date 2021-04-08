@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="Paid_Order" layoutX="202.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="29.0" layoutY="54.0" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #fff5f5;" text="Số tiền đã thu">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="29.0" layoutY="110.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-color: #fff5f5;" text="Tổng số tiền đơn hàng">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <TextField fx:id="ToTal_Order" layoutX="202.0" layoutY="110.0" prefHeight="30.0" prefWidth="184.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="29.0" layoutY="173.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: #fff5f5;" text="Số tiền còn lại">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <TextField fx:id="ExCash_Order" layoutX="202.0" layoutY="173.0" prefHeight="30.0" prefWidth="184.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="Cancle_Order" buttonType="RAISED" layoutX="184.0" layoutY="240.0" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: #fcfcfc;" text="Hủy">
+         <graphic>
+            <FontAwesomeIconView />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Pay_Order" buttonType="RAISED" layoutX="54.0" layoutY="305.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #fcfcfc;" text="Thanh toán">
+         <graphic>
+            <FontAwesomeIconView />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Bill_Order" buttonType="RAISED" layoutX="283.0" layoutY="305.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #fcfcfc;" text="In hóa đơn">
+         <graphic>
+            <FontAwesomeIconView />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
